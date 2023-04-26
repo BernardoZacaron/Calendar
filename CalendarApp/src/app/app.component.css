@@ -1,0 +1,20 @@
+main{
+    display: grid;
+    grid-template-areas:
+    'months calendar calendar'
+    'months calendar calendar'
+    'months event event';
+    justify-items: stretch;
+    align-items: stretch;
+    grid-auto-rows: 100%;
+}
+
+#month-selector{
+    grid-area: months;
+}
+#calendar-display{
+    grid-area: calendar;
+}
+#event-display{
+    grid-area: event;
+}
