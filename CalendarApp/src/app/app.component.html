@@ -1,24 +1,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <main>
-  <div id="month-selector" style="background-color: purple;">
-    <ul class="list-group">
-      <li class="list-group-item"><a>January</a></li><!-- routerLinkActive="active" routerLink="/jan" -->
-      <li class="list-group-item"><a>February</a></li>
-      <li class="list-group-item"><a>March</a></li>
-      <li class="list-group-item"><a>April</a></li>
-      <li class="list-group-item"><a>May</a></li>
-      <li class="list-group-item"><a>June</a></li>
-      <li class="list-group-item"><a>July</a></li>
-      <li class="list-group-item"><a>August</a></li>
-      <li class="list-group-item"><a>September</a></li>
-      <li class="list-group-item"><a>October</a></li>
-      <li class="list-group-item"><a>November</a></li>
-      <li class="list-group-item"><a>December</a></li>
-    </ul>
-  </div>
   <div id="calendar-display">
-    <router-outlet></router-outlet>
+      <mat-calendar [(selected)]="selected"></mat-calendar>
   </div>
+  <div id="form-display"></div>
   <div id="event-display">
     <app-event></app-event>
   </div>

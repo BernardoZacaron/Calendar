@@ -8,7 +8,6 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 
 import { AppComponent } from './app.component';
-import { CalendarComponent } from './calendar/calendar.component';
 import { EventComponent } from './event/event.component';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -17,7 +16,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
-    CalendarComponent,
     EventComponent
   ],
   imports: [

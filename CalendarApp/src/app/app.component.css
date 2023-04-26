@@ -1,19 +1,23 @@
 main{
+    height: 100%;
+    background-color: rgb(165, 255, 255);
     display: grid;
     grid-template-areas:
-    'months calendar calendar calendar'
-    'months calendar calendar calendar'
-    'months event event event';
+    'calendar calendar calendar form form'
+    'calendar calendar calendar form form'
+    'calendar calendar calendar event event';
     justify-items: stretch;
     align-items: stretch;
     grid-auto-rows: 30vh;
 }
 
-#month-selector{
-    grid-area: months;
-}
 #calendar-display{
     grid-area: calendar;
+    width: 70%;
+    margin: 0 15% 0;
+}
+#form-display{
+    grid-area: form;
 }
 #event-display{
     grid-area: event;
