@@ -12,6 +12,7 @@ import { EventComponent } from './event/event.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MainService } from './main.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatFormFieldModule,
     MatDatepickerModule
   ],
-  providers: [],
+  providers: [MainService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

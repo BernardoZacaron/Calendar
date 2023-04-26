@@ -3,7 +3,26 @@
   <div id="calendar-display">
       <mat-calendar [(selected)]="selected"></mat-calendar>
   </div>
-  <div id="form-display"></div>
+  <div id="form-display">
+    <form action="">
+          <div class="form-group mb-3">
+              <label for="name">Name</label>
+              <input type="text" id="name" class="form-control" #nameInput>
+          </div>
+          <div class="form-group mb-3">
+              <label for="description">Description</label>
+              <input type="text" id="description" class="form-control" #descriptionInput>
+          </div>
+          <div class="form-group mb-3">
+            <label>Date: {{ selected }}</label>
+          </div>
+      <div class="row">
+          <div class="col-xs-12">
+              <button class="btn btn-success" type="submite" (click)="addEvent()">Add</button>
+          </div>
+      </div>
+  </form>
+  </div>
   <div id="event-display">
     <app-event></app-event>
   </div>
