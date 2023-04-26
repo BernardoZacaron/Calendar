@@ -1,6 +1,4 @@
 main{
-    height: 100%;
-    background-color: rgb(165, 255, 255);
     display: grid;
     grid-template-areas:
     'calendar calendar calendar form form'
@@ -13,12 +11,19 @@ main{
 
 #calendar-display{
     grid-area: calendar;
-    width: 70%;
-    margin: 0 15% 0;
+    width: 90%;
+    padding-right: 5%; padding-left: 5%;
+    border-right: 1px darkgray solid;
 }
 #form-display{
     grid-area: form;
+    padding-right: 1vw;
+    padding-top: 2vw;
 }
 #event-display{
     grid-area: event;
+}
+
+#container-date{
+    width: 35vw;
 }

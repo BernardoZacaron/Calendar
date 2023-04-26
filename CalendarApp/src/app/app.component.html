@@ -1,29 +1,30 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 <main>
   <div id="calendar-display">
       <mat-calendar [(selected)]="selected"></mat-calendar>
   </div>
-  <div id="form-display">
-    <form action="">
-          <div class="form-group mb-3">
-              <label for="name">Name</label>
-              <input type="text" id="name" class="form-control" #nameInput>
-          </div>
-          <div class="form-group mb-3">
-              <label for="description">Description</label>
-              <input type="text" id="description" class="form-control" #descriptionInput>
-          </div>
-          <div class="form-group mb-3">
-            <label>Date: {{ selected }}</label>
-          </div>
-      <div class="row">
-          <div class="col-xs-12">
-              <button class="btn btn-success" type="submite" (click)="addEvent()">Add</button>
-          </div>
-      </div>
-  </form>
-  </div>
-  <div id="event-display">
-    <app-event></app-event>
-  </div>
+    <div id="form-display">
+      <h1>New event</h1>
+      <form action="">
+            <div class="form-group mb-3">
+                <label for="name">Title</label>
+                <input type="text" id="name" class="form-control" #nameInput>
+            </div>
+            <div class="form-group mb-3">
+                <label for="description">Description</label>
+                <textarea id="description" class="form-control" #descriptionInput></textarea>
+            </div>
+            <div class="form-group mb-3" id="container-date">
+              <label>Date: {{ selected | date : 'dd/MM/yyyy' }}</label>
+              <!-- <ngb-timepicker [(ngModel)]="time"></ngb-timepicker> -->
+            </div>
+            <div class="form-group mb-3">
+                <button class="btn btn-success" type="submite" (click)="addEvent()">Add</button>
+            </div>
+      </form>
+    </div>
+    <div id="event-display" style="overflow-y:auto;">
+      <app-event></app-event>
+    </div>
 </main>

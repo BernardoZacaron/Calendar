@@ -5,10 +5,11 @@ import { Event } from './event/event.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent{
+export class AppComponent {
   selected: Date | null;
+  time = { hour: 13, minute: 30 };
 
   @ViewChild('nameInput') nameInputRef: ElementRef;
   @ViewChild('descriptionInput') descriptionInputRef: ElementRef;

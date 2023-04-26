@@ -12,4 +12,7 @@ export class EventComponent {
 
   allEvents: Event[] = this.mainService.getEvents();
   
+  deleteEvent(index: number){
+    this.mainService.deleteEvent(index);
+  }
 }
