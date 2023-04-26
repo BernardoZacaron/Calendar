@@ -5,6 +5,8 @@ import { CdkTableModule } from '@angular/cdk/table';
 import { AppComponent } from './app.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { EventComponent } from './event/event.component';
+import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { EventComponent } from './event/event.component';
   ],
   imports: [
     BrowserModule,
-    CdkTableModule
+    AppRoutingModule,
+    CdkTableModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

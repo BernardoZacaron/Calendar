@@ -1,10 +1,23 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <main>
   <div id="month-selector" style="background-color: purple;">
-
+    <ul class="list-group">
+      <li class="list-group-item">January</li>
+      <li class="list-group-item">February</li>
+      <li class="list-group-item">March</li>
+      <li class="list-group-item">April</li>
+      <li class="list-group-item">May</li>
+      <li class="list-group-item">June</li>
+      <li class="list-group-item">July</li>
+      <li class="list-group-item">August</li>
+      <li class="list-group-item">September</li>
+      <li class="list-group-item">October</li>
+      <li class="list-group-item">November</li>
+      <li class="list-group-item">December</li>
+    </ul>
   </div>
   <div id="calendar-display">
-    <app-calendar></app-calendar>
+    <router-outlet></router-outlet>
   </div>
   <div id="event-display">
     <app-event></app-event>

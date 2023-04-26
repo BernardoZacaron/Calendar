@@ -1,12 +1,12 @@
 main{
     display: grid;
     grid-template-areas:
-    'months calendar calendar'
-    'months calendar calendar'
-    'months event event';
+    'months calendar calendar calendar'
+    'months calendar calendar calendar'
+    'months event event event';
     justify-items: stretch;
     align-items: stretch;
-    grid-auto-rows: 100%;
+    grid-auto-rows: 30vh;
 }
 
 #month-selector{
