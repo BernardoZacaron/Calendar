@@ -4,8 +4,7 @@ import { CalendarComponent } from "./calendar/calendar.component";
 
 
 const appRoutes: Routes = [
-    { path: 'jan', component: CalendarComponent },
-    { path: '', redirectTo: '/jan' }
+    { path: ':month', component: CalendarComponent }
 ];
 
 @NgModule({
